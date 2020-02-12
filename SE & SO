@@ -1,0 +1,22 @@
+al=[]
+odd=[]
+even=[]
+l=int(input("enter the len:"))
+SE=0
+SO=0
+for i in range(0,1):
+  a=int(input("Enter:"))
+  al.append(a)
+  if((a%2)==0):
+    even.append(a)
+    SE=SE+a
+  else:
+    odd.append(a)
+    SO=SO+a
+print("All :",all) 
+print("Even :",even) 
+print("Odd :",odd) 
+print("Sum of even :",SE) 
+print("Sum of odd :",SO)
+
+    
