@@ -1,0 +1,37 @@
+S=float(input("Enter the source: "))
+D=float(input("Enter the destination: "))
+print("1. Auto - 10rps")
+print("2. Micro - 45rps")
+print("3. Mini - 25rps")
+print("4. Prime - 100rps")
+option=int(input("CHOOSE OPTION : "))
+distance=D-S
+
+
+
+def auto():
+  amnt=distance*10
+  print("Total Km you were travelled is {0}".format(distance))
+  print("Payed Amount {1}".format(amnt))
+def micro():
+  amnt=distance*45
+  print("Total Km you were travelled is {0}".format(distance))
+  print("Payed Amount {1}".format(amnt))
+def mini():
+  amnt=distance*25
+  print("Total Km you were travelled is {0}".format(distance))
+  print("Payed Amount {1}".format(amnt))
+def prime():
+  amnt=distance*100
+  print("Total Km you were travelled is {0}".format(distance))
+  print("Payed Amount {1}".format(amnt))
+
+def uber():
+  if(a==1):
+  auto()
+  elif(a==2):
+  micro()
+  elif(a==3):
+  mini()
+  elif(a==4):
+  prime()
