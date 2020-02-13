@@ -1,0 +1,14 @@
+n=int(input("Enter no of elements:"))
+prime=[]
+nonprime=[]
+for i in range(0,n):
+     a=int(nput("Enter:"))
+     if(a>1):
+         for  in range(2,a//2+1):
+              if((a%i)==0):
+                  nonprime.append(a)
+                  break
+         else:
+             prime.append(a)
+print("prime no list :",prime)
+print("Non Prime no list ",nonprime)
