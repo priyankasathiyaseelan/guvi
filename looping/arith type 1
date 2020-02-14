@@ -4,7 +4,15 @@ add=n1+n2
 sub=n1-n2
 mul=n1*n2
 div=n1/n2
+mod=n1%n2
+sqr=n1**n2
+cube=n1***n2
 print("sum of value" ,n1, "and" ,n2,"is",add)
 print("dfference of value" ,n1, "and" ,n2,"is",sub)
 print("multiplication of value" ,n1, "and" ,n2,"is",mul)
 print("division of value" ,n1, "and" ,n2,"is",div)
+print("Modulo of value" ,n1, "and" ,n2,"is",mod)
+print("Square of value" ,n1, "and" ,n2,"is",sqr)
+print("Cube of value" ,n1, "and" ,n2,"is",cube)
+
+
