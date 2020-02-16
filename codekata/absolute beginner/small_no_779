@@ -1,4 +1,8 @@
 def list():
-  list=[23,1]
-  print(" ",min(list))
+  n1=int(input(" "))
+  n2=int(input(" "))
+  if(n1<n2):
+     print("{}" .format(n1))
+  if(n2<n1):
+    print("{}" .format(n2))
 list()
