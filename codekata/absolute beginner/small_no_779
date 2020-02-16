@@ -1,0 +1,4 @@
+def list():
+  list=[23,1]
+  print(" ",min(list))
+list()
