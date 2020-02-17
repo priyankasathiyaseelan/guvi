@@ -1,0 +1,7 @@
+s= input("")       #user give input
+def palindrome():
+  if(s==s[:: - 1]):   #using slicing
+    print(1)          
+  else:
+    print(0)
+palindrome()      #calling function
