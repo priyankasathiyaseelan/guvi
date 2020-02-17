@@ -1,11 +1,12 @@
-def larg(n1,n2,n3):
-  n1=int(input(" "))
-  n2=int(input(" "))
-  n3-int(input(" "))
-  if(n1>n2):
-     print("{}" .format(n1))
-  if(n2>n1):
-    print("{}" .format(n2))
-  else:
-    print("{}" .format(n3))
-larg(n1,n2,n3)
+A=int(input(""))
+B=int(input(""))
+C=int(input(""))
+def large():
+    if(A>B and A>C):
+        return A
+    elif(B>C and B>A):
+        return B
+    else:
+        return C
+large()
+print(large())
