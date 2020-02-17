@@ -1,0 +1,6 @@
+def length(n):
+  m=n.replace(" ", "") 
+  return m
+n=input("")
+N=len(length(n))
+print(N)
