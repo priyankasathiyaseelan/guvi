@@ -1,7 +1,7 @@
 def mod():
-  A,B,C=map(int,input().split())
-  n=(A*B)&C
-  return n
+  a,b,c=map(int,input().split())
+  m=(a*b)%c
+  return m
 res=mod()
 print(res)
 mod()
