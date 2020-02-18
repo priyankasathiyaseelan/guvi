@@ -1,0 +1,7 @@
+#get input from user
+A=float(input(""))
+#convert it into fahrenheit
+fahren=(A*9/5)+32
+#display the output
+B=round(fahren,2)
+print(B)
