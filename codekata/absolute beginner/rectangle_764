@@ -1,0 +1,7 @@
+#input given by user
+l=int(input(""))
+b=int(input(""))
+#put condition
+rec=l*b
+#print output
+print('',rec)
