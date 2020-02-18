@@ -1,0 +1,11 @@
+import math
+#Get input from user
+rad = float(input(""))
+#function definition
+def cir(rad):
+	circum = 2 * math.pi * rad
+	return circum
+#function calling
+A=cir(rad)
+#display output
+print("%.2f" %A)
