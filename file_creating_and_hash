@@ -1,0 +1,17 @@
+import hashlib
+f = open("demofile.txt", "w")
+f.write("Now the file has more content!")
+f.close()
+f = open("demofile.txt", "r")
+print(f.read())
+def myfile(fn):
+  h=hashlib.sha1()
+  with open(fn,'rb') as file:
+    chunk = 0
+    while chunk!=b'':
+      chunk = file.read(1024)
+      h.update(chunk)
+
+  return h.hexdigest()
+message = myfile("demofile.txt")  
+print(message)   
