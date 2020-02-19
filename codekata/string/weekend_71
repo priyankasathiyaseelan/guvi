@@ -1,0 +1,7 @@
+week=input()
+def weekend():
+  if(week=="monday" or week=="tuesday" or week=="wednesday" or week=="thursday" or week=="friday"):
+    print("yes")
+  if(week=="saturday" or week=="sunday"):
+    print("no")
+weekend()
