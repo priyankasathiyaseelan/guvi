@@ -1,0 +1,5 @@
+#convert country name to capital letter using map function
+
+const name=dummy.map((item)=>{
+    return (item.name).toUpperCase()})
+console.log(name)
