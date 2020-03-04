@@ -1,0 +1,24 @@
+<html>
+<body>
+
+    <h1>RESULT</h1>
+    <h1 id="won"></h1>
+    <table id="list"></table>
+
+    <script>
+        team1 = JSON.parse(localStorage.getItem('team1'));
+        team2 = JSON.parse(localStorage.getItem('team2'));
+        if (team1.score > team2.score) {
+            var out = "team1 won the game by " + team1.wicket + " wicket";
+            document.getElementById("won").innerHTML = out;
+        } else if (team1.score < team2.score) {
+            var out = "team2 won the game by " + team2.wicket + " wicket";
+            document.getElementById("won").innerHTML = out;
+        } else {
+            document.getElementById("won").innerHTML = "DRAW";
+        }
+        document.getElementById("list").innerHTML = "score for team1 is " + team1.score + " score for team2 is " + team2.score;
+    </script>
+
+</body>
+</html>
