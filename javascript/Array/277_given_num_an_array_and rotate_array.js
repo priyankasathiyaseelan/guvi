@@ -1,8 +1,8 @@
 const readline=require("readline");
 const inp=readline.createInterface({input:process.stdin});
-const n=[];
+const m=[];
 inp.on("line",(data)=>{
-    n.push(data);
+    m.push(data)
 });
 inp.on("close",()=>{
     var a=m[0].split(" ");
