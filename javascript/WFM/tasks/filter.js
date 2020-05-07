@@ -1,22 +1,15 @@
-const readline=require('readline');
-const inp=readline.createInterface({input:process.stdin});
-const n=[];
-inp.on('line',(data)=>{
-    n.push(data);
-});
-inp.on('close',()=>{
-     var b=n[0].split(" ");
-  var c=[];
-    function filter(){
-      for(var i=0;i<b.length;i++)
+const fun = (arr,callback) => {
+  let a=[];
+  for(var i=0;i<arr.length;i++){
+    if(callback(arr[i]))
       {
-         if(b[i]>50)
-         {
-             c.push(b[i]);
-         }
+        a.push(arr[i]);
       }
-      return c.join(" ");
-    }
-    var res=filter();
-    console.log(res);
-});
+  }
+  return a
+}
+const filfun =(value)=>value%2==0
+fun([2,10,3,14,20,24], filfun) 
+
+//output:
+//[2, 10, 14, 20, 24]
