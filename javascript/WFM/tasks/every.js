@@ -1,31 +1,21 @@
-const readline=require('readline');
-const inp=readline.createInterface({input:process.stdin});
-const n=[];
-inp.on('line',(data)=>{
-    n.push(data);
-});
-inp.on('close',()=>{
-     var b=a[0].split(" ");
-    var c=[];
-    function every(){
-        for(var i=0;i<b.length;i++)
-        {
-             if(parseInt(b[i])>=18)
-             {
-                
-                c.push(b[i])
-             }
-            
-        }
-        if(c.length===b.length)
-        {
-            return "true"
-        }
-        else
-        {
-            return "false"
-        }
-        
+const fun = (arr,callback) => {
+  var count=0;
+  for(var i=0;i<arr.length;i++){
+    if(callback(arr[i]))
+      {
+        count+=1;
+      }
+  }
+  if(count==arr.length){
+    return true
+  }
+  else
+    {
+      return false
     }
-    console.log(every());
-});
+}
+const mapfun =(value)=>value>0
+fun([5,10,15,20,25], mapfun) 
+
+// output:
+// true
