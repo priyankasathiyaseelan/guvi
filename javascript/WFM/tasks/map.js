@@ -1,29 +1,12 @@
-const readline=require('readline');
-const inp=readline.createInterface({input:process.stdin});
-const n=[];
-inp.on('line',(data)=>{
-    n.push(data);
-});
-inp.on('close',()=>{
-    var k=[];
-    var l=0;
-    var sum=0;
-    var res=[];
-    var g;
-inp.on('close',()=>{
-    k=a[0].split(" ");
-function map()
-{
- for(var i=0;i<k.length;i++)
- {  
-     l=0;
-     l=parseInt(k[i]*5);
-     //console.log(l);
-     res.push(l);
- }
- return g=res.join(" ");
- 
+const fun = (arr,callback) => {
+  let a=[];
+  for(var i=0;i<arr.length;i++){
+    a.push(callback(arr[i]));
+  }
+  return a
 }
-res=map();
-console.log(res);
-});
+const mapfun =(value)=>Math.sqrt(value);
+fun([5,3,7], mapfun) 
+
+//output:
+//[2.23606797749979, 1.7320508075688772, 2.6457513110645907]
