@@ -1,18 +1,8 @@
-const readline=require('readline');
-const inp=readline.createInterface({input:process.stdin});
-const n=[];
-inp.on('line',(data)=>{
-    n.push(data);
-});
-inp.on('close',()=>{
-    var a=n[0];
-    var b=n[1];
-    var c;
-    function concat()
-    {
-        c=a+b;
-        return c;
-    }
-    var res=concat();
-    console.log(res);
-});
+const concat = (arr1,arr2) => {
+  let a=arr1;
+  for(var i=0;i<arr2.length;i++){
+    a.push(arr2[i]);
+  }
+  return a
+}
+concat([1,2,3,4],[5,6,7,8])
