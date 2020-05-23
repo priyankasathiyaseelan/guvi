@@ -69,9 +69,19 @@ a:hover{
 }
 .row1{
    display: flex;
-   padding: 30px;
+   padding-left: 300px;
 }
 .column1::after{
    padding-left: 500%;
    padding-right: 1500%;
+}
+
+#footer{
+   position: fixed;
+   left: 0;
+   
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
 }
