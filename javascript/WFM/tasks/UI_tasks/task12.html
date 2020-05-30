@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body id = "body">
+<script>
+var b=document.getElementById("body");
+b.style.backgroundColor="white";
+
+var div1 = document.createElement("div");
+    div1.setAttribute("style","height:400px");
+    div1.style.width = "90%";
+    div1.style.position = "absolute";
+    div1.style.left = "60px";
+    div1.style.top = "20px";
+    div1.style.backgroundColor = "dodgerblue";
+
+var t1 = document.createElement("div");
+    t1.innerHTML = "Landing";
+    t1.style.cssFloat = "left";
+    t1.style.top = "45px";
+    t1.style.position = "absolute";
+    t1.style.textIndent="115px";
+    t1.style.color = "white";
+    t1.style.fontSize = "20px";
+div1.appendChild(t1);
+
+var t2 = document.createElement("p");
+    t2.innerHTML = "Fly makes you";  
+    t2.style.fontFamily = "Tahoma";
+    t2.style.left = "20px";
+    t2.style.top = "30px";
+    t2.style.position = "absolute";
+    t2.style.textIndent="90px";
+    t2.style.color = "white";
+    t2.style.fontSize = "60px";   
+div1.appendChild(t2);
+
+var t21 = document.createElement("p");
+    t21.innerHTML = "faster";  
+    t21.style.fontFamily = "Tahoma";
+    t21.style.left = "20px";
+    t21.style.top = "88px";
+    t21.style.position = "absolute";
+    t21.style.textIndent="90px";
+    t21.style.color = "white";
+    t21.style.fontSize = "60px";   
+div1.appendChild(t21);
+
+var t3 = document.createElement("p");
+    t3.innerHTML = "New free template by uicookies.com.For more";  
+    t3.style.fontFamily = "Arial";
+    t3.style.left = "20px";
+    t3.style.top = "220px";
+    t3.style.position = "absolute";
+    t3.style.textIndent="90px";
+    t3.style.color = "white";
+    t3.style.fontSize = "15px";   
+div1.appendChild(t3);
+
+var t31 = document.createElement("p");
+    t31.innerHTML = "templates visit the site.Lorem ipsum dolor sit amet,";  
+    t31.style.fontFamily = "Arial";
+    t31.style.left = "20px";
+    t31.style.top = "250px";
+    t31.style.position = "absolute";
+    t31.style.textIndent="90px";
+    t31.style.color = "white";
+    t31.style.fontSize = "15px";   
+div1.appendChild(t31);
+    
+var t32 = document.createElement("p");
+    t32.innerHTML = "consectetur adipiscing elit.";  
+    t32.style.fontFamily = "Arial";
+    t32.style.left = "20px";
+    t32.style.top = "280px";
+    t32.style.position = "absolute";
+    t32.style.textIndent="90px";
+    t32.style.color = "white";
+    t32.style.fontSize = "15px";   
+div1.appendChild(t32);
+
+var btn = document.createElement("button");
+    btn.innerHTML = "SEE PRICING";
+    btn.style.borderRadius = "25px";
+    btn.style.backgroundColor = "limegreen";
+    btn.style.top = "340px";  
+    btn.style.position = "absolute";
+    btn.style.left = "125px";
+div1.appendChild(btn); 
+document.body.appendChild(div1);
+
+var nav = document.createElement("nav");
+    nav.style.width = "300%";
+    nav.style.height = "45px";
+    nav.style.position = "absolute";
+    nav.style.top = "50px";
+document.body.appendChild(nav);
+
+var ul = document.createElement("ul");
+    ul.style.position = "relative";
+    ul.style.left = "525px";
+    ul.style.color = "white";
+var l1 = document.createElement("li");
+    l1.innerHTML = "Home";
+var l2 = document.createElement("li");
+    l2.innerHTML = "Features";
+var l3 = document.createElement("li");
+    l3.innerHTML = "Reviews";
+var l4 = document.createElement("li");
+    l4.innerHTML = "Pricing";
+var l5 = document.createElement("li");
+    l5.innerHTML = "FAQ";
+
+    l1.style.display = "inline-block";
+    l1.style.margin = "0 25px";
+    l2.style.display = "inline-block";
+    l2.style.margin = "0 25px";
+    l3.style.display = "inline-block";
+    l3.style.margin = "0 25px";
+    l4.style.display = "inline-block";
+    l4.style.margin = "0 25px";
+    l5.style.display = "inline-block";
+    l5.style.margin = "0 25px";
+ul.appendChild(l1);
+ul.appendChild(l2);
+ul.appendChild(l3);
+ul.appendChild(l4);
+ul.appendChild(l5);
+nav.appendChild(ul);  
+
+var l6 = document.createElement("button");
+    l6.innerHTML = "Get Started";
+    l6.style.background = "dodgerblue";
+    l6.style.margin = "0 25px";  
+ul.appendChild(l6);    
+
+var div2 = document.createElement("div");
+    div2.setAttribute("style","height:550px");
+    div2.style.width = "30%";
+    div2.style.position = "absolute";
+    div2.style.right = "190px";
+    div2.style.top = "90px";
+    div2.style.backgroundColor = "white";
+
+var t4 = document.createElement("p");
+    t4.innerHTML = "Sign up for Free";
+    t4.style.fontFamily = "Arial";
+    t4.style.fontSize = "40px";
+    t4.style.position = "absolute";
+    t4.style.top = "5px";
+    t4.style.right = "80px";
+div2.appendChild(t4);    
+
+var t5 = document.createElement("input");
+    t5.setAttribute("type","text");
+    t5.style.width = "45%";
+    t5.setAttribute("placeholder","Full Name");
+    t5.style.textIndent = "60px";
+    t5.style.fontFamily = "Arial";
+    t5.style.fontSize = "20px";
+    t5.style.color = "black";
+    t5.style.position = "absolute";
+    t5.style.top = "100px";
+    t5.style.right = "120px";
+div2.appendChild(t5);    
+
+var t6 = document.createElement("input");
+    t6.setAttribute("type","text");
+    t6.style.width = "45%";
+    t6.setAttribute("placeholder","Email-ID");
+    t6.style.textIndent = "60px";
+    t6.style.fontFamily = "Arial";
+    t6.style.fontSize = "20px";
+    t6.style.position = "absolute";
+    t6.style.color = "black";
+    t6.style.top = "150px";
+    t6.style.right = "120px";
+div2.appendChild(t6);    
+
+var t7 = document.createElement("input");
+    t7.setAttribute("type","text");
+    t7.style.width = "45%";
+    t7.setAttribute("placeholder","Password");
+    t7.style.textIndent = "60px";
+    t7.style.fontFamily = "Arial";
+    t7.style.fontSize = "20px";
+    t7.style.position = "absolute";
+    t7.style.top = "200px";
+    t7.style.right = "120px";
+div2.appendChild(t7);    
+
+var t8 = document.createElement("input");
+    t8.setAttribute("type","text");
+    t8.style.width = "45%";
+    t8.setAttribute("placeholder","Select Option");
+    t8.style.textIndent = "60px";
+    t8.style.fontFamily = "Arial";
+    t8.style.fontSize = "20px";
+    t8.style.position = "absolute";
+    t8.style.top = "250px";
+    t8.style.right = "120px";
+div2.appendChild(t8);    
+
+var btn1 = document.createElement("button");
+    btn1.innerHTML = "REGISTER";
+    btn1.style.color = "white";
+    btn1.style.borderRadius = "25px";
+    btn1.style.backgroundColor = "blue";
+    btn1.style.top = "290px";  
+    btn1.style.position = "absolute";
+    btn1.style.right = "170px";
+div2.appendChild(btn1); 
+
+var t9 = document.createElement("p");
+    t9.innerHTML = "FEATURES";
+    t9.style.fontFamily = "Arial";
+    t9.style.color = "gray";
+    t9.style.fontSize = "10px";
+    t9.style.position = "absolute";
+    t9.style.top = "450px";
+    t9.style.right = "500px";
+div2.appendChild(t9);
+     
+var t10 = document.createElement("p");
+    t10.innerHTML = "App";
+    t10.style.fontFamily = "Arial";
+    t10.style.color = "dimgray";
+    t10.style.fontSize = "20px";
+    t10.style.position = "absolute";
+    t10.style.top = "460px";
+    t10.style.right = "550px";
+div2.appendChild(t10);    
+    
+var t10 = document.createElement("p");
+    t10.innerHTML = "Features";
+    t10.style.fontFamily = "Arial";
+    t10.style.color = "dimgray";
+    t10.style.fontSize = "20px";
+    t10.style.position = "absolute";
+    t10.style.top = "460px";
+    t10.style.right = "460px";
+div2.appendChild(t10);    
+    
+
+document.body.appendChild(div2);
+
+
+    
+    
+    
+    
+    
+    
+    
+
+</script>
+</body>
+</html>
