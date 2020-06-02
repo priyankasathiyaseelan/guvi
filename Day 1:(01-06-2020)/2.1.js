@@ -32,7 +32,7 @@ var library=[
     
     ]
     //update count as 300
-     var count = library[0].readers[1].count=300;
+     var count = library[0].readers[1].count = 300;
     //console.log(count);
 }
 person2counts();
