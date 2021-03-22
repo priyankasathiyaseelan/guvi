@@ -10,53 +10,36 @@
     <script src="budgettodolist.js"></script>
 </head>
 <style>
-    h1{
-        margin-left: 31px;
-    }
+ h1{
+   margin-left: 31px;
+  }
    
 * {
   box-sizing: border-box;
-  
-}
-  
+  }
 .border_green {
-
-   
     border: 4px solid green;
     margin:30px;
     box-shadow: 2px 0px 6px 10px #1e7e341f;
-
-     
-   }
-
-
-   .border_red{
-
-   
-border: 4px solid red;
-margin:30px;
-box-shadow: 2px 0px 6px 10px #ff00001a;
-
- 
+    }
+.border_red{
+    border: 4px solid red;
+    margin:30px;
+    box-shadow: 2px 0px 6px 10px #ff00001a;
 }
-    
-  
-  .input1{
-      margin-left:17px;
-      margin-top:0px;
-      width:387px;
-    
+.input1{
+  margin-left:17px;
+  margin-top:0px;
+  width:387px;
   border: solid green;
   border-width: 0px;
   outline-style: solid;
   outline-color: green;
 }
-  
 .input2{
-      margin-left:17px;
-      margin-top:0px;
-      width:387px;
-    
+  margin-left:17px;
+  margin-top:0px;
+  width:387px;
   border: 0px solid red;
   outline-style: solid;
   outline-color: red;
@@ -65,11 +48,9 @@ box-shadow: 2px 0px 6px 10px #ff00001a;
       margin-left:17px;
       margin-top:0px;
       width:387px;
-    
-  border: 0px solid red;
-  outline-style: solid;
-  outline-color: red;
-
+      border: 0px solid red;
+      outline-style: solid;
+      outline-color: red;
 }
 
 img {
@@ -79,25 +60,24 @@ img {
     height: 188px;
 }
 ul li {
-  
   list-style-type: none;  
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-
-    </style>
+</style>
 
 <body>
    <h1>BUDGET APP</h1> 
    <div class="row">
-    <div class="col-5" >
+   <div class="col-5" >
         
         <div class="border_green">
             <p style="margin:17px">Please Enter Your Budget</p>
             <input type="text" class="input1" id="mybudget"></input>
             <button type="button" class="btn btn-outline-success" style="margin:17px" onclick="add()">Calculate</button>
         </div>
+       
         <div class="border_red" >
             <p style="margin:17px" >Please Enter Your Expenses</p>
             <input type="text" class="input2" id="t"></input>
@@ -105,29 +85,29 @@ ul li {
             <input type="text" class="input3"  id="price"></input>
             <button type="button" class="btn btn-outline-success" style="margin:17px" onclick="newElement()">Add Expenses</button>
         </div>
-                   
     </div>
+
     <div class="col-7">
-        <div class="row">
+    <div class="row">
+        
       <div class="col-4">
         <h2 class="text-center">BUDGET</h2>
         <img src="icon.png"   width="55" height="50" >
         <p id="b"> </p>
-         
-       
-     </div>
+      </div>
+            
       <div class="col-4">
         <h2 class="text-center">EXPENSES</h2>
         <img src="expen.jpg"  width="55" height="50" >
         <ul id="c" > </ul>
-     
-      </div>
+     </div>
+            
       <div class="col-4">
         <h2 class="text-center">BALANCE</h2>
-        <img src="https://images.megapixl.com/3382/33825599.jpg"   width="55" height="50" >
+        <img src="https://images.megapixl.com/3382/33825599.jpg"  width="55"  height="50" >
         <p id="d"></p>
       </div>
-     </div>
+    </div>
       
       <div class="row" id="r">
       <div class="col-4">
@@ -136,16 +116,17 @@ ul li {
               <li></li>
           </ul>
       </div>
+          
       <div class="col-4">
         <ul  id="myUL2">
-            <li><h5>EXPENSES AMOUNT</h5> </li>
-            <li></li>
+        <li><h5>EXPENSES AMOUNT</h5> </li>
+        <li></li>
         </ul>
-    </div>
+      </div>
 
-      </div>
-      </div>
     </div>
+    </div>
+  </div>
   
 
 </body>
